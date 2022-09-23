@@ -12,22 +12,13 @@
     </style>
 </head>
 <body onload="startGame()">
-
-    <script>
-
-        startGame = () => {
-            canvas = document.createElement("canvas");
-            this.canvas.width = 500;
-            this.canvas.height = 500;
-            document.body.insertBefore(this.canvas, document.body.childNodes[0]);
-        }
-        var gameArea = {
-
-        }
-
-        component = (width, height) => {
-            
-        }
-    </script>
+    <div id="keys">
+        <button onclick="moveUp()" id="up">Up</button>
+        <button onclick="moveRight()" id="right">Right</button>
+        <button onclick="moveLeft()" id="left">Left</button>
+        <button onclick="moveDown()" id="down">down</button>
+    </div>
+    
+    <script src="main.js"></script>
 </body>
 </html>
