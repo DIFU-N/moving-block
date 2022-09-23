@@ -59,3 +59,24 @@ moveLeft = () => {
     gamePiece.speedX -= 1;
 }
 
+document.onkeydown = function (event) {
+    switch (event.keyCode) {
+       case 37:
+            moveLeft();
+          console.log("Left key is pressed.");
+          break;
+       case 38:
+            moveUp();
+          console.log("Up key is pressed.");
+          break;
+       case 39:
+            moveRight();
+          console.log("Right key is pressed.");
+          break;
+       case 40:
+            moveDown();
+          console.log("Down key is pressed.");
+          break;
+    }
+};
+
