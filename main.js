@@ -41,3 +41,21 @@ updateGameArea = () => {
     gamePiece.newPosition();
     gamePiece.update();
 }
+
+function moveUp () {
+    gamePiece.speedY -= 1;
+}
+
+moveDown = () => {
+    gamePiece.speedY += 1;
+}
+
+moveRight = () => {
+    gamePiece.speedX += 1;
+    console.log(gamePiece.speedX);
+}
+
+moveLeft = () => {
+    gamePiece.speedX -= 1;
+}
+
